@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Eventos.IO.Domain.Core\Eventos.IO.Domain.Core.csproj" />
+    <PackageReference Include="FluentValidation" Version="7.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eventos.IO.Domain.Core\Eventos.IO.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -3,8 +3,10 @@
     "",
     "\\Eventos.IO",
     "\\Eventos.IO\\src",
-    "\\Eventos.IO\\src\\Eventos.IO.Domain"
+    "\\Eventos.IO\\src\\Eventos.IO.Domain",
+    "\\Eventos.IO\\src\\Eventos.IO.Domain.Core",
+    "\\Eventos.IO\\src\\Eventos.IO.Domain\\Models"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\Eventos.IO\\src\\Eventos.IO.Domain\\Models\\Evento.cs",
   "PreviewInSolutionExplorer": false
 }

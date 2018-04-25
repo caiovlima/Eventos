@@ -425,19 +425,6 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
-      },
-      "Eventos.IO.Domain.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.0",
-        "dependencies": {
-          "FluentValidation": "7.5.2"
-        },
-        "compile": {
-          "bin/placeholder/Eventos.IO.Domain.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Eventos.IO.Domain.Core.dll": {}
-        }
       }
     }
   },
@@ -2097,16 +2084,10 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "Eventos.IO.Domain.Core/1.0.0": {
-      "type": "project",
-      "path": "../Eventos.IO.Domain.Core/Eventos.IO.Domain.Core.csproj",
-      "msbuildProject": "../Eventos.IO.Domain.Core/Eventos.IO.Domain.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Eventos.IO.Domain.Core >= 1.0.0",
       "FluentValidation >= 7.5.2",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -2119,11 +2100,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain\\Eventos.IO.Domain.csproj",
-      "projectName": "Eventos.IO.Domain",
-      "projectPath": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain\\Eventos.IO.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
+      "projectName": "Eventos.IO.Domain.Core",
+      "projectPath": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj",
       "packagesPath": "C:\\Users\\conta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain\\obj\\",
+      "outputPath": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -2144,11 +2125,7 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {
-            "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj": {
-              "projectPath": "C:\\Users\\conta\\OneDrive\\Documentos\\GitHub\\Eventos\\Eventos.IO\\src\\Eventos.IO.Domain.Core\\Eventos.IO.Domain.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

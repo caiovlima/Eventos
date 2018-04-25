@@ -1,0 +1,12 @@
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.csprojResolveAssemblyReference.cache
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.csproj.CoreCompileInputs.cache
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.AssemblyInfoInputs.cache
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.AssemblyInfo.cs
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.deps.json
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.csproj.CopyComplete
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.pdb

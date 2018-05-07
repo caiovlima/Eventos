@@ -1,42 +1,28 @@
 ﻿using Eventos.IO.Domain.Core.Models;
+using Eventos.IO.Domain.Organizadores;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
 
-namespace Eventos.IO.Domain.Models
+namespace Eventos.IO.Domain.Eventos
 {
     public class Evento : Entity<Evento>
     {
-        public Evento(
-            string nome, 
-            string descricaoCurta, 
-            string descricaoLonga, 
-            DateTime dataInicio, 
-            DateTime dataFim, 
-            bool gratuito, 
-            decimal valor,
-            bool online, 
-            string nomeEmpresa, 
-            Categoria categoria,
-            Endereco endereco 
-                )
+
+        public Evento(string nome, DateTime dataInicio, DateTime dataFim, bool gratuito, decimal valor, bool online, string nomeEmpresa)
         {
+
             Id = Guid.NewGuid();
             Nome = nome;
-            DescricaoCurta = descricaoCurta;
-            DescricaoLonga = descricaoLonga;
             DataInicio = dataInicio;
             DataFim = dataFim;
             Gratuito = gratuito;
             Valor = valor;
             Online = online;
             NomeEmpresa = nomeEmpresa;
-            Categoria = categoria;
-            Endereco = endereco;
-
-           
-           
+            
         }
+
 
         //Como eu estou protegendo minhas entidades com private set, há uma necessidade de usar um ctor para outras entidades 
         //referenciarem minha classe de evento, se necessário !
@@ -54,9 +40,6 @@ namespace Eventos.IO.Domain.Models
         public Endereco Endereco { get; private set; }
         public Organizador Organizador { get; private set; }
 
-
-
-      
         //Método que faz override o metodo abstrato da classe que implementamos (entity)
         public override bool EhValido()
         {
@@ -130,7 +113,56 @@ namespace Eventos.IO.Domain.Models
                 .Length(2, 150).WithMessage("O nome da empresa deve possuir entre 2 e 150 caracteres");
         }
         #endregion
+
+
+        
+        private Evento() { } //construtor privado para a classe agregada Evento Factory
+        public static class EventoFactory
+        {
+            public static Evento NovoEventoCompleto(
+                Guid id,
+                string nome,
+                string descCurta,
+                string descLonga,
+                DateTime dataInicio,
+                DateTime dataFim,
+                bool gratuito,
+                decimal valor,
+                bool online,
+                string nomeEmpresa,
+                Guid? organizadorId
+                )
+            {
+                var evento = new Evento()
+                {
+                    Id = id,
+                    Nome = nome,
+                    DescricaoCurta = descCurta,
+                    DescricaoLonga = descLonga,
+                    DataInicio = dataInicio,
+                    DataFim = dataFim,
+                    Gratuito = gratuito,
+                    Valor = valor,
+                    Online = online,
+                    NomeEmpresa = nomeEmpresa
+                    };
+
+                if (organizadorId != null)
+                    evento.Organizador = new Organizador(organizadorId.Value);
+
+                return evento;
+            }
+        }
     }
 
-    //Começar aula 11
+    /* Nota: Agregação = Uma entidade que possui dentro de si outras entidades trabalhando em conjunto para uma mesma função
+     * ou seja, minha classe de Evento possui outras entidades como Categoria, Endereco, Organizador e Tags, todas elas trabalhando
+     * junto com um nó que as interligam, no caso seria  a classe de Evento
+     
+     Detalhe, se tivermos muitas raízes de agregação, o ideal é criar pastas para separá-las, mas cuidado com os namespaces
+     coloque o nome das pastas no plural, pois geralmente nome de entidades ficam no singular*/
 }
+
+
+//Aula 11
+//02:12:00

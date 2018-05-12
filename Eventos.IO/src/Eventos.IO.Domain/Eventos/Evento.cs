@@ -35,10 +35,44 @@ namespace Eventos.IO.Domain.Eventos
         public decimal Valor { get; private set; }
         public bool Online { get; private set; }
         public string NomeEmpresa { get; private set; }
-        public Categoria Categoria { get; private set; }
+        public bool Excluido { get; private set; }
+
         public ICollection<Tags> Tags { get; private set; }
-        public Endereco Endereco { get; private set; }
-        public Organizador Organizador { get; private set; }
+
+        /*PROPRIEDADES DE CHAVES ESTRANGEIRAS:
+         * Permite que o EF entenda que a tabela evento tem chaves estrangeiras 
+         * de outras tabelas
+         * mas para funcionar preciso de propriedades de navegação*/
+         
+        public Guid? CategoriaId { get; private set; }
+        public Guid? EnderecoId { get; private set; }
+        public Guid? OrganizadorId { get; private set; }
+
+
+        /*PROPRIEDADES DE NAVEGAÇÃO: Servem para o EF Core entender que a tabela de evento
+         * se relaciona com as outras tabelas (Categoria e Endereco)
+         */
+        public virtual Categoria Categoria { get; private set; }
+        public virtual Endereco Endereco { get; private set; }
+        public virtual Organizador Organizador { get; private set; }
+
+        public void AtribuirEndereco(Endereco endereco)
+        {
+            if (!endereco.EhValido()) return;
+            Endereco = endereco;
+        }
+
+        public void AtribuirCategoria(Categoria categoria)
+        {
+            if (!categoria.EhValido()) return;
+            Categoria = categoria;
+        }
+
+        public void ExcluirEvento()
+        {
+            // TODO: Deve validar uma regra?
+            Excluido = true;
+        }
 
         //Método que faz override o metodo abstrato da classe que implementamos (entity)
         public override bool EhValido()
@@ -59,6 +93,9 @@ namespace Eventos.IO.Domain.Eventos
             ValidarLocal();
             ValidarNomeEmpresa();
             ValidationResult = Validate(this); //aqui dizemos para validar a própria instância do método validar
+
+            //validações adicionais
+            ValidarEndereco();
 
         }
         
@@ -112,6 +149,17 @@ namespace Eventos.IO.Domain.Eventos
                 .NotEmpty().WithMessage("O nome do organizador precisa ser fornecido")
                 .Length(2, 150).WithMessage("O nome da empresa deve possuir entre 2 e 150 caracteres");
         }
+
+        private void ValidarEndereco()
+        {
+            if (Online) return;
+            if (Endereco.EhValido()) return;
+
+            foreach(var error in Endereco.ValidationResult.Errors)
+            {
+                ValidationResult.Errors.Add(error);
+            }
+        }
         #endregion
 
 
@@ -130,7 +178,9 @@ namespace Eventos.IO.Domain.Eventos
                 decimal valor,
                 bool online,
                 string nomeEmpresa,
-                Guid? organizadorId
+                Guid? organizadorId,
+                Endereco endereco,
+                Guid categoriaId
                 )
             {
                 var evento = new Evento()
@@ -144,13 +194,23 @@ namespace Eventos.IO.Domain.Eventos
                     Gratuito = gratuito,
                     Valor = valor,
                     Online = online,
-                    NomeEmpresa = nomeEmpresa
+                    NomeEmpresa = nomeEmpresa,
+                    Endereco = endereco,
+                    CategoriaId = categoriaId
                     };
 
-                if (organizadorId != null)
-                    evento.Organizador = new Organizador(organizadorId.Value);
+                if (organizadorId.HasValue)
+                    evento.OrganizadorId = organizadorId.Value;
+
+                if (online)
+                    evento.Endereco = null;
 
                 return evento;
+            }
+
+            internal static object NovoEventoCompleto(string nome, DateTime dataInicio, DateTime dataFim, bool gratuito, decimal valor, bool online, string nomeEmpresa)
+            {
+                throw new NotImplementedException();
             }
         }
     }
@@ -162,7 +222,3 @@ namespace Eventos.IO.Domain.Eventos
      Detalhe, se tivermos muitas raízes de agregação, o ideal é criar pastas para separá-las, mas cuidado com os namespaces
      coloque o nome das pastas no plural, pois geralmente nome de entidades ficam no singular*/
 }
-
-
-//Aula 11
-//02:12:00

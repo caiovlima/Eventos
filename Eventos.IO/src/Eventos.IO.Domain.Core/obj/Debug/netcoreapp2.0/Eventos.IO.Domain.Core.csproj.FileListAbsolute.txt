@@ -7,9 +7,9 @@ C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\Eventos.IO.Domain.C
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.deps.json
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.dll
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.pdb
-C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.csprojResolveAssemblyReference.cache
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.csproj.CoreCompileInputs.cache
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.AssemblyInfoInputs.cache
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.AssemblyInfo.cs
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.dll
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Domain.Core\obj\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.csprojAssemblyReference.cache

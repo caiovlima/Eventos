@@ -1,0 +1,16 @@
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Application.deps.json
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Application.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Mvc.ViewFeatures.xml
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.csprojAssemblyReference.cache
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.csproj.CoreCompileInputs.cache
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.AssemblyInfoInputs.cache
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.AssemblyInfo.cs
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.csproj.CopyComplete
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Application.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Application\obj\Debug\netcoreapp2.0\Eventos.IO.Application.pdb

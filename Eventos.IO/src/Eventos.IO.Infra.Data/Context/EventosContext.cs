@@ -22,9 +22,12 @@ namespace Eventos.IO.Infra.Data.Context
         //método que o EF Core vai ler para criar, aqui descrevemos as propriedades que cada tabela irá ter
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //Aula 13
-            //00:54:00
+            
             modelBuilder.AddConfiguarion(new EventoMapping());
+            modelBuilder.AddConfiguarion(new OrganizadorMapping());
+            modelBuilder.AddConfiguarion(new EnderecoMapping());
+            modelBuilder.AddConfiguarion(new CategoriaMapping());
+
 
             base.OnModelCreating(modelBuilder);
         }

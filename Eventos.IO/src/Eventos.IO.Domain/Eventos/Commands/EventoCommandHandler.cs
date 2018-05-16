@@ -40,7 +40,7 @@ namespace Eventos.IO.Domain.Eventos.Commands
              * que iremos utilizar a injeção de dependencia, dizendo que _eventoRepository se equivale ao eventoRepository, 
              * ai na persistencia  você chama a propriedade_eventoRepository passando o Add juntamente com a variável que instancia
              * o objeto Evento.*/
-
+            var endereco = new Endereco(message.Id, message.Endereco.Logradouro, message.Endereco.Numero, message.Endereco.Complemento, message.Endereco.Bairro, message.Endereco.CEP, message.Endereco.Cidade, message.Endereco.Estado, message.Endereco.EventoId.Value);
             var evento = Evento.EventoFactory.NovoEventoCompleto(
                 message.Id,
                 message.Nome,
@@ -53,8 +53,8 @@ namespace Eventos.IO.Domain.Eventos.Commands
                 message.Online,
                 message.NomeEmpresa,
                 message.OrganizadorId,
-                message.Endereco,
-                message.Categoria.Id);
+                endereco,
+                message.CategoriaId);
             
             if (!EventoValido(evento)) return;
 
@@ -82,7 +82,7 @@ namespace Eventos.IO.Domain.Eventos.Commands
             // TODO: Validar se o evento pertence a pessoa que está editando.
             var evento = Evento.EventoFactory.NovoEventoCompleto(message.Id, message.Nome, message.DescricaoCurta,
                 message.DescricaoLonga, message.DataInicio, message.DataFim, message.Gratuito, message.Valor,
-                message.Online, message.NomeEmpresa, message.OrganizadorId, eventoAtual.Endereco, message.Categoria.Id);
+                message.Online, message.NomeEmpresa, message.OrganizadorId, eventoAtual.Endereco, message.CategoriaId);
 
             if (!EventoValido(evento)) return;
 

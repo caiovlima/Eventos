@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Eventos.IO.Site.Data;
 using Eventos.IO.Site.Services;
+using Eventos.IO.Domain.Interfaces;
+using Eventos.IO.Application.Services;
 
 namespace Eventos.IO.Site
 {
@@ -43,6 +45,8 @@ namespace Eventos.IO.Site
             // Register no-op EmailSender used by account confirmation and password reset during development
             // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=532713
             services.AddSingleton<IEmailSender, EmailSender>();
+
+            services.AddScoped<IEventoAppService, EventoAppService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

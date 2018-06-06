@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Ocorreu um erro!";
+}
+
+<h1 class="text-danger">@ViewData["Title"]</h1>
+<h2 class="text-danger">Ocorreu um erro, tente novamente ou contate um administrador.</h2>
+
+@{
+    if (ViewData["MensagemErro"] != null)
+    {
+        <br />
+        <h2 class="text-danger">@ViewData["MensagemErro"]</h2>
+    }
+}

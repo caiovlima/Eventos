@@ -1,0 +1,193 @@
+﻿@using Eventos.IO.Application.ViewModels
+@model EventoViewModel
+
+@{
+    ViewData["Title"] = "Registrar novo Evento";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <h4>Preencha todos os dados corretamente</h4>
+        <hr />
+        
+        <vc:summary />
+        
+        <div class="form-group">
+            <label asp-for="Nome" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DescricaoCurta" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="DescricaoCurta" class="form-control" />
+                <span asp-validation-for="DescricaoCurta" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DescricaoLonga" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <textarea rows="5" asp-for="DescricaoLonga" class="form-control"></textarea>
+                <span asp-validation-for="DescricaoLonga" class="text-danger"></span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label asp-for="Categoria" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                @Html.Partial("_Categorias")
+                <span asp-validation-for="Categoria" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DataInicio" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="DataInicio" class="form-control" />
+                <span asp-validation-for="DataInicio" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DataFim" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="DataFim" class="form-control" />
+                <span asp-validation-for="DataFim" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="Gratuito" />
+                    <label asp-for="Gratuito"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Valor" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input data-val-number="O valor está em formato inválido" asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="Online" />
+                    <label asp-for="Online"></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="NomeEmpresa" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="NomeEmpresa" class="form-control" />
+                <span asp-validation-for="NomeEmpresa" class="text-danger"></span>
+            </div>
+        </div>
+        
+        <div id="EnderecoForm">
+            <hr/>
+            <h3>Endereço do Evento</h3>
+
+            <div class="form-group">
+                <label asp-for="Endereco.Logradouro" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Endereco.Logradouro" class="form-control"/>
+                    <span asp-validation-for="Endereco.Logradouro" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Numero" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Endereco.Numero" class="form-control"/>
+                    <span asp-validation-for="Endereco.Numero" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Complemento" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Endereco.Complemento" class="form-control"/>
+                    <span asp-validation-for="Endereco.Complemento" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Bairro" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Endereco.Bairro" class="form-control"/>
+                    <span asp-validation-for="Endereco.Bairro" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.CEP" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Endereco.CEP" class="form-control"/>
+                    <span asp-validation-for="Endereco.CEP" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Cidade" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="Endereco.Cidade" class="form-control"/>
+                    <span asp-validation-for="Endereco.Cidade" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco.Estado" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    @Html.Partial("_Estados")
+                    <span asp-validation-for="Endereco.Estado" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="btSubmit" value="Registrar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Voltar para a lista</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.pt.min.js"></script>
+
+    <script>
+        ValidacoesEvento();
+    </script>
+    
+    @{
+        if (ViewBag.RetornoPost != null)
+        {
+            var notificacao = ViewBag.RetornoPost.ToString().Split(',');
+
+            <script>
+                toastr["@notificacao[0]"]("@notificacao[1]");
+            </script>
+
+            if (@notificacao[0] == "success")
+            {
+                <script>
+                    $("#btSubmit").prop("disabled", true);
+                </script>
+            }
+        }
+    }
+}

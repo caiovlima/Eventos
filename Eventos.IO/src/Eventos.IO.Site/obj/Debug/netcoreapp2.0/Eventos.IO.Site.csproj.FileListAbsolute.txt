@@ -5,7 +5,6 @@ C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp2.0\Eventos.IO.Site.pdb
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\Eventos.IO.Site.csprojAssemblyReference.cache
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\Eventos.IO.Site.csproj.CoreCompileInputs.cache
-C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\Eventos.IO.Site.AssemblyInfoInputs.cache
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\Eventos.IO.Site.AssemblyInfo.cs
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\Eventos.IO.Site.dll
@@ -18,3 +17,6 @@ C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.Core.pdb
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp2.0\Eventos.IO.Domain.pdb
 C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\Eventos.IO.Site.csproj.CopyComplete
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp2.0\Eventos.IO.Application.dll
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\bin\Debug\netcoreapp2.0\Eventos.IO.Application.pdb
+C:\Users\conta\OneDrive\Documentos\GitHub\Eventos\Eventos.IO\src\Eventos.IO.Site\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

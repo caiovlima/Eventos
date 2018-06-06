@@ -23,10 +23,10 @@ namespace Eventos.IO.Infra.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             
-            modelBuilder.AddConfiguarion(new EventoMapping());
-            modelBuilder.AddConfiguarion(new OrganizadorMapping());
-            modelBuilder.AddConfiguarion(new EnderecoMapping());
-            modelBuilder.AddConfiguarion(new CategoriaMapping());
+            modelBuilder.AddConfiguration(new EventoMapping());
+            modelBuilder.AddConfiguration(new OrganizadorMapping());
+            modelBuilder.AddConfiguration(new EnderecoMapping());
+            modelBuilder.AddConfiguration(new CategoriaMapping());
 
 
             base.OnModelCreating(modelBuilder);
